@@ -1,4 +1,10 @@
-{
-  "username" : "username",
-  "password" : "password"
-}
+[
+  {
+    "username" : "username",
+    "password" : "password"
+  },
+  {
+    "username" : "username1",
+    "password" : "password1"
+  }
+]

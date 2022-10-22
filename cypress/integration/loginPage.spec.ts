@@ -1,9 +1,6 @@
 describe('Login feature',()=>{
-    var username = ''
-    var password = ''
     before(()=>{
-        password = 'password1'
-        username = 'username1'
+
     })
 
     after(()=>{
@@ -15,12 +12,14 @@ describe('Login feature',()=>{
 
     it('should login successfully',()=>{
         cy.fixture('users').then((users)=>{
-            cy.loginSuccessfully(users.username,users.password)
+            cy.loginSuccessfully(users[0].username,users[0].password)
         })
     })
 
     it('should login unsuccessfully',()=>{
-        cy.loginUnsuccessfully(username,password)
+        cy.fixture('users').then((users)=>{
+            cy.loginUnsuccessfully(users[1].username,users[1].password)
+        })
     })
 
     afterEach(()=>{

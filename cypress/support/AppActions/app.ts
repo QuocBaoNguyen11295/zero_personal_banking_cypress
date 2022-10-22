@@ -1,7 +1,8 @@
 declare namespace Cypress{
     interface Chainable{
         loadPage(): Chainable<Element>,
-        closePage(): Chainable<Element>
+        closePage(): Chainable<Element>,
+        clickOnFeedbackPage(): Chainable<Element>
     }
 }
 
@@ -13,4 +14,8 @@ Cypress.Commands.add('loadPage',()=>{
 Cypress.Commands.add('closePage',()=>{
     cy.clearCookies()
     cy.clearLocalStorage()
+})
+
+Cypress.Commands.add('clickOnFeedbackPage',()=>{
+    cy.get('#feedback').click()
 })
