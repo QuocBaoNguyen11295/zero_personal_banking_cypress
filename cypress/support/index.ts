@@ -17,5 +17,7 @@
 import './AppActions/loginAppActions'
 import './AppActions/app'
 import './AppActions/feedbackAppActions'
+import './AppActions/onlineBankingAppActions'
+import './AppActions/accountSummaryAppActions'
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
