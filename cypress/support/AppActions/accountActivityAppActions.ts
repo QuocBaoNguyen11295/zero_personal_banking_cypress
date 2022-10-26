@@ -37,10 +37,12 @@ Cypress.Commands.add('fillInFindTransaction',(description,from_date,to_date,from
     cy.get('#aa_fromAmount').type(from_amount)
     cy.get('#aa_toAmount').type(to_amount)
     cy.get('#aa_type').select(type)
-    cy.get('button[type="submit"]').click().slowDown(5000)
-    cy.wait(3000)
+    cy.get('button[type="submit"]').click()
 })
 
 Cypress.Commands.add('verifyTableOnFindTransaction',()=>{
-    cy.get('#filtered_transactions_for_account > table').should('be.visible')
+    cy.get('#filtered_transactions_for_account').should('be.visible')
+    cy.get('tbody > tr')
+			.its('length')
+			.should('be.gt', 0)
 })
