@@ -23,6 +23,8 @@ import './AppActions/accountActivityAppActions'
 import 'cypress-plugin-tab'
 import 'cypress-slow-down/commands'
 import './AppActions/transferFundAppActions'
+import './AppActions/payBillsAppActions'
+import './AppActions/paySavedPayeeAppActions'
 import { slowCypressDown } from 'cypress-slow-down'
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

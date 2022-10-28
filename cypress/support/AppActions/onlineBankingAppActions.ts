@@ -2,7 +2,8 @@ declare namespace Cypress{
     interface Chainable{
         clickOnAccountSummary(): Chainable<Element>,
         clickOnAccountActivity(): Chainable<Element>,
-        clickOnTransferFund(): Chainable<Element>
+        clickOnTransferFund(): Chainable<Element>,
+        clickOnPayBills(): Chainable<Element>
     }
 }
 
@@ -16,4 +17,8 @@ Cypress.Commands.add('clickOnAccountActivity',()=>{
 
 Cypress.Commands.add('clickOnTransferFund',()=>{
     cy.get('#transfer_funds_link').click()
+})
+
+Cypress.Commands.add('clickOnPayBills',()=>{
+    cy.get('#pay_bills_link').click()
 })
