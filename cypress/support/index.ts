@@ -26,6 +26,7 @@ import './AppActions/transferFundAppActions'
 import './AppActions/payBillsAppActions'
 import './AppActions/paySavedPayeeAppActions'
 import './AppActions/addNewPayeeAppActions'
+import './AppActions/purchaseForeignCurrencyAppActions'
 import { slowCypressDown } from 'cypress-slow-down'
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
