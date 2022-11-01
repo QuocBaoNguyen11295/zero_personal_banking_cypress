@@ -22,3 +22,7 @@ Cypress.Commands.add('clickOnTransferFund',()=>{
 Cypress.Commands.add('clickOnPayBills',()=>{
     cy.get('#pay_bills_link').click()
 })
+
+Cypress.Commands.add('clickOnMyMoneyMap',()=>{
+    cy.get('#money_map_link').click()
+})
